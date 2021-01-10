@@ -31,16 +31,16 @@ function SideBar() {
                 {/* <Icon as={Logo} w={"80px"} h={"100px"} margin="20px 0" /> Replace with logo */}
                 <Stack direction={{ sm: "row", md: "column", base: "column" }} spacing="10px" margin="auto auto" position="relative">
                     {/* <Link as={WouterLink} to="/skills" > */}
-                    <SideIcon as={AiOutlineWindows} linkTo="/skills"/>
-                    <SideIcon as={AiOutlineUser} />
-                    <SideIcon as={AiOutlineRadarChart} />
-                    <SideIcon as={AiOutlineMail} />
+                    <SideIcon as={AiOutlineWindows} linkTo="/"/>
+                    <SideIcon as={AiOutlineUser} linkTo="/about" />
+                    <SideIcon as={AiOutlineRadarChart} linkTo="/skills" />
+                    <SideIcon as={AiOutlineMail} linkTo="/contact" />
 
                 </Stack>
                 <Stack direction={{ sm: "row", md: "column", base: "column" }} spacing="10px" margin="auto auto" position="relative" display={{ sm: "none", md: "flex" }}>
                     <SideIcon as={AiOutlineLinkedin} />
                     <SideIcon as={AiOutlineInstagram} />
-                    <SideIcon as={AiOutlineGithub} />
+                    <SideIcon as={AiOutlineGithub} linkTo="https://github.com/GreatSembo"/>
 
                 </Stack>
                 {/* <Box padding="4" bg="gray.100" maxW="3xl">

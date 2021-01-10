@@ -7,7 +7,7 @@ type LayoutProps = {
 
 
 const PageLayout: FunctionComponent<LayoutProps> = (props) => {
-    return <Container w="100%" h="100%" maxWidth="100%" paddingLeft={{ sm: "10px", md: "80px" }} paddingRight={{ sm: "10px", md: "0px" }}>
+    return <Container w="100%" h="100%" maxWidth="100%" display="flex" paddingLeft={{ sm: "10px", md: "80px" }} paddingRight={{ sm: "10px", md: "0px" }}>
         {props.particle &&
             <ParticlesBackground />}
         {props.children}
