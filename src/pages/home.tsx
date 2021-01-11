@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Button,  Heading, SlideFade} from "@chakra-ui/react"
 import { useLocation } from "wouter"
 import PageLayout from "../components/layout/pageLayout"
-import {
-    AiOutlineMail
-} from "react-icons/ai";
+import MyButton from "../components/myButton"
 export default function Home() {
     const [fadeOn, setFadeOn] = useState(false)
     const [location, setLocation] = useLocation();
@@ -66,7 +64,7 @@ export default function Home() {
                 <SlideFade in={fadeOn} offsetY="30px">
                     <Box margin="20px auto auto auto" >
                         <Heading as="h2" size="lg" textAlign="center" color="gray.200" fontWeight="100">React Developer - AWS Expert - Fitness Enthusiast</Heading>
-                        <Button onClick={() => setLocation('/contact')} margin="50px auto auto auto"
+                        {/* <Button onClick={() => setLocation('/contact')} margin="50px auto auto auto"
                             leftIcon={<AiOutlineMail />}
                             textAlign="center"
                             color={"electric_lime"}
@@ -80,7 +78,8 @@ export default function Home() {
                                 boxShadow:
                                     "0 0 1px 2px forest_green_traditional, 0 1px 1px forest_green_traditional",
                             }}
-                        >Contact Me</Button>
+                        >Contact Me</Button> */}
+                        <MyButton onClick={()=>setLocation('/contact')} text={"Contact Me"}/>
                     </Box>
                 </SlideFade>
             </Box>
