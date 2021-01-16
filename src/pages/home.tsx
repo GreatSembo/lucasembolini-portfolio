@@ -16,7 +16,7 @@ export default function Home() {
                 // chekc if text isn't finished yet
                 if (i < (text.length)) {
                     // add next character to h1
-                    let h1 = document.querySelector("h1")
+                    let h1 = document.getElementById("presentation")
                     if (h1 && text[i] != "<") h1.innerHTML = text.substring(0, i + 1) + '<span class="typewriter" aria-hidden="true"></span>';
 
                     // wait for a while and call this function again for next character
@@ -57,8 +57,8 @@ export default function Home() {
             <h1></h1> 
             </Center> */}
 
-            <Box display="block" fontSize="20" bgColor="transparent" color="white" margin="auto auto auto 100px">
-                <Heading as="h1" size="3xl" >
+            <Box display="block" fontSize="20" bgColor="transparent" color="white" margin={{sm:"auto",md:"auto auto auto 100px"}}>
+                <Heading as="h1" id="presentation" size="3xl" mt={{sm:"150px",md:"auto"}}>
                     Hey,<br /> I'm Luca Sembolini <br /> a Full Stack Developer
                 </Heading>
                 <SlideFade in={fadeOn} offsetY="30px">

@@ -9,7 +9,7 @@ import {
   Box,
   Textarea, Center, Heading
 } from "@chakra-ui/react";
-import Mountain from "../assets/beyond.png"
+import Mountain from "../assets/beyond_back.jpg"
 import MyButton from "../components/myButton"
 export default function ContactMe() {
   const { handleSubmit, errors, register, formState, reset } = useForm();
