@@ -33,10 +33,10 @@ function SideBar() {
                 {/* <Icon as={Logo} w={"80px"} h={"100px"} margin="20px 0" /> Replace with logo */}
                 <Stack direction={{ sm: "row", md: "column", base: "column" }} spacing="10px" margin="auto auto" position="relative">
                     {/* <Link as={WouterLink} to="/skills" > */}
-                    <SideIcon as={AiOutlineWindows} linkTo="/"/>
-                    <SideIcon as={AiOutlineUser} linkTo="/about" />
-                    <SideIcon as={AiOutlineRadarChart} linkTo="/skills" />
-                    <SideIcon as={AiOutlineMail} linkTo="/contact" />
+                    <SideIcon as={AiOutlineWindows} linkTo={process.env.PUBLIC_URL }/>
+                    <SideIcon as={AiOutlineUser} linkTo={process.env.PUBLIC_URL + "/about"} />
+                    <SideIcon as={AiOutlineRadarChart} linkTo={process.env.PUBLIC_URL + "/skills"} />
+                    <SideIcon as={AiOutlineMail} linkTo={process.env.PUBLIC_URL + "/contact"} />
 
                 </Stack>
                 <Stack direction={{ sm: "row", md: "column", base: "column" }} spacing="10px" margin="auto auto" position="relative" display={{ sm: "none", md: "flex" }}>

@@ -79,7 +79,7 @@ export default function Home() {
                                     "0 0 1px 2px forest_green_traditional, 0 1px 1px forest_green_traditional",
                             }}
                         >Contact Me</Button> */}
-                        <MyButton onClick={()=>setLocation('/contact')} text={"Contact Me"}/>
+                        <MyButton onClick={()=>setLocation(process.env.PUBLIC_URL + '/contact')} text={"Contact Me"}/>
                     </Box>
                 </SlideFade>
             </Box>

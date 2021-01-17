@@ -13,10 +13,10 @@ export default class App extends Component {
   render() {
     return (
       <Switch>
-        <Route path="/" component={Home}/>
-        <Route path="/skills" component={Skills}/>
-        <Route path="/contact" component={ContactMe}/>
-        <Route path="/about" component={About}/>
+        <Route path={process.env.PUBLIC_URL } component={Home}/>
+        <Route path={process.env.PUBLIC_URL + "/skills"} component={Skills}/>
+        <Route path={process.env.PUBLIC_URL + "/contact"} component={ContactMe}/>
+        <Route path={process.env.PUBLIC_URL + "/about"} component={About}/>
         <Route>404, Not Found!</Route>
       </Switch>
     );
