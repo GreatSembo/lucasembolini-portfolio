@@ -14,6 +14,7 @@ function MyButton(props:any){
         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
         border="2px"
         display="flex"
+        fontSize="xl"
         h="50px"
         w="150px"
         borderRadius="0"

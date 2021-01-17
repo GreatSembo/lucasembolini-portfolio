@@ -18,5 +18,9 @@ export default {
         electric_lime: "#ccff33ff",
     },
     breakpoints: breakpoints,
+    fonts: {
+      heading: "ristretto",
+      body: "ristretto",
+    },
  
   }

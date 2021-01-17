@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-
+import {Box} from "@chakra-ui/react";
 import Chart from "chart.js";
+import { flattenDiagnosticMessageText } from "typescript";
 
 export default class SkillsChart extends Component {
   state = {
@@ -8,65 +9,74 @@ export default class SkillsChart extends Component {
   };
   componentDidMount() {
     Chart.defaults.global.defaultFontColor = '#fff';
+    Chart.defaults.global.defaultFontSize=16;
+    Chart.defaults.global.fontSize=16;
     var ctx = document.getElementById("myChart");
     var myRadarChart = new Chart(ctx, {
       type: "radar",
       data: {
-        labels: ["Running", "Swimming", "Eating", "Cycling"],
+        labels: ["Javascript","React", "Java", "C#", "AWS","CSS",],
   
         datasets: [
           {
             label: "Level of Knowledge",
-            data: [20, 10, 40, 2],
-            backgroundColor: ["#9ef01a", "#9ef01a", "#9ef01a", "#9ef01a"],
+            data: [70, 90,65, 70, 60,  50],
+            backgroundColor:"#2E8B57",
             borderColor: "#9ef01a",
-            borderWidth: 2,
-            fill: false,
+            borderWidth: 3,
+            fill: true ,
+            fillColor :"rgba(151,205,187,0.2)",
+            pointBorderColor:"#ccff33",
+            pointBackgroundColor:"#9ef01a",
+            pointBorderWidth:1,
+            spanGaps:true,
+            
           },
         ],
       },
-      defaults:{global:{defaultFontColor : '#fff'}},
       options: {
+        fontSize:16,
         title: {
           display: true,
-          text: "Custom Chart Title",
+          text: "My Main Skills",
         },
-        responsive: true,
+        fontSize:16,
         fontColor:"white",
         legend: {
           fontColor: "white",
           labels: {
-            // This more specific font property overrides the global property
             fontColor: "white",
           },
         },
         maintainAspectRatio: true,
-			spanGaps: false,
 
         scale: {
+          pointLabels: { fontSize:18 },
           gridLines: {
             color: "white",
             backgroundColor: "white",
             ticks: {
               fontColor: "white",
               backgroundColor: "transparent",
+              fontSize:16,
             },
+            size:1,
           },
           angleLines: {
             display: true,
-            color: "white",
-            ticks: {
-              fontColor: "white",
-              backgroundColor: "transparent",
-            },
+            color: "gray",
           },
           ticks: {
+            fontSize:16,
+
             fontColor: "white",
             backgroundColor: "transparent",
-            step: 20,
             display: false,
             suggestedMin: 50,
             suggestedMax: 100,
+            step:10,
+            beginAtZero: true,
+            max:100
           },
         },
       },
@@ -74,8 +84,7 @@ export default class SkillsChart extends Component {
     
   }
   render() {
-    const { hoveredCell } = this.state;
 
-    return <canvas id="myChart" width="400" height="400"></canvas>;
+    return <Box height="60vh" width="60vh"><canvas id="myChart" width="500" height="500"></canvas></Box>
   }
 }

@@ -1,35 +1,29 @@
 import React, { useState } from "react"
-import { useForm } from "react-hook-form";
 import PageLayout from "../components/layout/pageLayout"
 import {
   Flex,
   Box,
-  Text, Center, Heading, Image, List, ListItem, ListIcon
+  Text, Center, Heading,
 } from "@chakra-ui/react";
 import Mountain from "../assets/beyond_back.jpg"
-import ProfilePicture from "../assets/profile.jpg"
-import { AiOutlineFundProjectionScreen, AiOutlineRead } from "react-icons/ai";
 import SkillsChart from "../components/skillsChart";
 
 export default function Skills() {
 
   return (
     <PageLayout background={Mountain}>
-      <Flex color="white" flexDirection={{ sm: "column", md: "row" }} fontSize={{sm:"sm",lg:"lg"}}>
-        <Center w={{sm:"100%",lg:"35%"}} mt={{sm:"80px",lg:"0px"}} flexDirection="column">
-        <Heading as="h1" size="xl" margin="0px auto 80px 20px" alignSelf="flex-start" >About Me</Heading>
-          <Image src={ProfilePicture} alt="Luca Sembolini" maxWidth="50%" />
-          <Text padding="20px" textAlign="center">I'm an Italian guy that loves challenges and I'm always looking for a new goal to accomplish. 
-          Having an healthy lifestyle is my number one priority. Focused Developer on the working our and fitness enthusiast on every other of the day</Text>
+      <Flex color="white" flexDirection={{ sm: "column", md: "row" }} mt={{ sm: "80px", lg: "0px" }} fontSize={{ sm: "sm", lg: "lg" }}>
+        <Center w={{ sm: "100%", lg: "40%" }} mt={{ sm: "40px", lg: "0px" }} flexDirection="column">
+          <Heading as="h1" size="2xl" margin="0px auto 0px 40px" alignSelf="flex-start" >Skills</Heading>
+          <Text padding="40px" fontSize="2xl" textAlign="left">
+            My competences range from frontend and backend, I'm working in the IT sector since 2016 where I started using Java and C# which I improved during the years.
+            Right now I'm using Javascript for every task, on the fronend for React and on the backend side for Nodejs. I'm learning Typescript to improve the quality of my code.
+            I use AWS for all the software architecture and because I really believe that know how a cloud service work it's essential for every project right now, I choosed to learn more about AWS to be able to use all the most usefull services that it offer
+            </Text>
         </Center>
-        <Center>
-            <SkillsChart/>
+        <Center w={{ sm: "100%", lg: "60%" }} mt={{ sm: "80px", lg: "0px" }} mb={{ sm: "40px", lg: "0px" }} flexDirection="column">
+          <SkillsChart />
         </Center>
-      
-         
-
-      
-
       </Flex>
 
     </PageLayout>

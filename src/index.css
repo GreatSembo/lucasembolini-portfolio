@@ -1,18 +1,20 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'schluber','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'schluber',source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 html, body, #root {
-  height: 100%
+  height: 100%;
+  background-color: black;
 }
 div#tsparticles {
   height: 100%;
@@ -35,4 +37,9 @@ span.typewriter {
 .greenLizardColor{
   color:#9EF01A;
 }
-canvas { color: #fff!important }
+
+
+@font-face {
+  font-family: 'ristretto';
+  src: local('ristretto'), url("./assets/ristretto.woff") format('woff');
+}
