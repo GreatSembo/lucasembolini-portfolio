@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/lucasembolini-portfolio/static/css/main.2a8eac8a.chunk.css",
-    "main.js": "/lucasembolini-portfolio/static/js/main.58175640.chunk.js",
-    "main.js.map": "/lucasembolini-portfolio/static/js/main.58175640.chunk.js.map",
-    "runtime-main.js": "/lucasembolini-portfolio/static/js/runtime-main.e8ad0657.js",
-    "runtime-main.js.map": "/lucasembolini-portfolio/static/js/runtime-main.e8ad0657.js.map",
-    "static/js/2.777a02d9.chunk.js": "/lucasembolini-portfolio/static/js/2.777a02d9.chunk.js",
-    "static/js/2.777a02d9.chunk.js.map": "/lucasembolini-portfolio/static/js/2.777a02d9.chunk.js.map",
-    "static/js/3.035b9fb9.chunk.js": "/lucasembolini-portfolio/static/js/3.035b9fb9.chunk.js",
-    "static/js/3.035b9fb9.chunk.js.map": "/lucasembolini-portfolio/static/js/3.035b9fb9.chunk.js.map",
-    "index.html": "/lucasembolini-portfolio/index.html",
-    "static/css/main.2a8eac8a.chunk.css.map": "/lucasembolini-portfolio/static/css/main.2a8eac8a.chunk.css.map",
-    "static/js/2.777a02d9.chunk.js.LICENSE.txt": "/lucasembolini-portfolio/static/js/2.777a02d9.chunk.js.LICENSE.txt",
-    "static/media/beyond_back.b2860f53.jpg": "/lucasembolini-portfolio/static/media/beyond_back.b2860f53.jpg",
-    "static/media/profile-altra.d5237c4d.jpg": "/lucasembolini-portfolio/static/media/profile-altra.d5237c4d.jpg",
-    "static/media/index.css": "/lucasembolini-portfolio/static/media/ristretto.4ceafd81.woff"
+    "main.css": "lucasembolini-portfolio/static/css/main.10c1d0e5.chunk.css",
+    "main.js": "lucasembolini-portfolio/static/js/main.16407949.chunk.js",
+    "main.js.map": "lucasembolini-portfolio/static/js/main.16407949.chunk.js.map",
+    "runtime-main.js": "lucasembolini-portfolio/static/js/runtime-main.b1c12a6a.js",
+    "runtime-main.js.map": "lucasembolini-portfolio/static/js/runtime-main.b1c12a6a.js.map",
+    "static/js/2.fcd3cf2d.chunk.js": "lucasembolini-portfolio/static/js/2.fcd3cf2d.chunk.js",
+    "static/js/2.fcd3cf2d.chunk.js.map": "lucasembolini-portfolio/static/js/2.fcd3cf2d.chunk.js.map",
+    "static/js/3.035b9fb9.chunk.js": "lucasembolini-portfolio/static/js/3.035b9fb9.chunk.js",
+    "static/js/3.035b9fb9.chunk.js.map": "lucasembolini-portfolio/static/js/3.035b9fb9.chunk.js.map",
+    "index.html": "lucasembolini-portfolio/index.html",
+    "static/css/main.10c1d0e5.chunk.css.map": "lucasembolini-portfolio/static/css/main.10c1d0e5.chunk.css.map",
+    "static/js/2.fcd3cf2d.chunk.js.LICENSE.txt": "lucasembolini-portfolio/static/js/2.fcd3cf2d.chunk.js.LICENSE.txt",
+    "static/media/beyond_back.b2860f53.jpg": "lucasembolini-portfolio/static/media/beyond_back.b2860f53.jpg",
+    "static/media/profile-altra.d5237c4d.jpg": "lucasembolini-portfolio/static/media/profile-altra.d5237c4d.jpg",
+    "static/media/index.css": "lucasembolini-portfolio/static/media/ristretto.4ceafd81.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8ad0657.js",
-    "static/js/2.777a02d9.chunk.js",
-    "static/css/main.2a8eac8a.chunk.css",
-    "static/js/main.58175640.chunk.js"
+    "static/js/runtime-main.b1c12a6a.js",
+    "static/js/2.fcd3cf2d.chunk.js",
+    "static/css/main.10c1d0e5.chunk.css",
+    "static/js/main.16407949.chunk.js"
   ]
 }
