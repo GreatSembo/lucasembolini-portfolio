@@ -23,7 +23,6 @@
     "web-vitals": "^0.2.4",
     "wouter": "^2.7.0"
   },
-  "homepage": "http://GreatSembo.github.io/lucasembolini-portfolio",
   "scripts": {
     "predeploy": "npm run build",
     "start": "react-scripts start",
