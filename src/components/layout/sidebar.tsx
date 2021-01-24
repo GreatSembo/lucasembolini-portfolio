@@ -22,7 +22,7 @@ import { Link as WouterLink } from "wouter";
 
 function SideBar() {
     return (
-        <Container w={{ sm: "100%", md: "80px" }} maxW="100%" h={{ sm: "70px", md: "100%" }} padding={{ sm: "0 10px ", md: "10px 0" }} marginLeft="0px" position="fixed" bgColor="forest_green_traditional">
+        <Container zIndex="1" w={{ sm: "100%", md: "80px" }} maxW="100%" h={{ sm: "70px", md: "100%" }} padding={{ sm: "0 10px ", md: "10px 0" }} marginLeft="0px" position="fixed" bgColor="forest_green_traditional">
 
             <SimpleGrid h="100%" spacing="40px" gridTemplateRows={{ sm: "1", md: "minmax(60px, 300px) 1fr minmax(200px, 300px)" }} gridTemplateColumns={{ sm: "1fr 1fr", md: "80px" }}>
                 {/* <Image src={Logo} alt="Luca Sembolini" w="50px" h="50px"/> */}
