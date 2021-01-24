@@ -10,8 +10,8 @@ export default function ParticlesBackroud(){
         left: 0,
         width: "100%",
         height: "100%",
-        zIndex: -1,
-        backgroundColor: "black",
+        zIndex: 0,
+        backgroundColor: "none",
         backgroundSize: "contain",
         paddingLeft:"80px"
       }}
