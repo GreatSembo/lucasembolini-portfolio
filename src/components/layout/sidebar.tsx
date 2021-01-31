@@ -25,14 +25,14 @@ function SideBar() {
     const [location, setLocation] = useLocation();
     return (
         <Container zIndex="1" w={{ sm: "100%", md: "80px" }} maxW="100%" h={{ sm: "70px", md: "100%" }} 
-        padding={{ sm: "0 10px ", md: "10px 0" }} marginLeft="0px" position="fixed" bgColor="forest_green_traditional"
+        padding={{ sm: "0 10px ", md: "10px 0" }} marginLeft="0px" position="fixed" bgColor="jet"
         boxShadow="inset 0px 0px 4px 2px #2fbf71">
 
             <SimpleGrid h="100%" spacing="40px" gridTemplateRows={{ sm: "1", md: "minmax(60px, 300px) 1fr minmax(200px, 300px)" }} gridTemplateColumns={{ sm: "1fr 1fr", md: "80px" }}>
                 {/* <Image src={Logo} alt="Luca Sembolini" w="50px" h="50px"/> */}
                 <Box marginTop="15px" marginBottom="auto" cursor="pointer" position="relative" onClick={()=>setLocation('/')}>
 
-                    <Image src={Cyber} w="80px" maxHeight="110px" width="95%" margin="auto"/>
+                    <Image src={Cyber} w="80px" maxHeight={{ sm: "65px",md:"110px"}} width={{sm:"auto",md:"95%"}} margin={{sm:"-10px auto 0px 0px",md:"auto"}}/>
                 
                     {/* <Logo2 w="80px" h="110px" /> */}
                 </Box>

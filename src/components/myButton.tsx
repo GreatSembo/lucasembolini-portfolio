@@ -20,7 +20,7 @@ function MyButton(props:any){
         borderRadius="0"
         _focus={{
             boxShadow:
-                "0 0 1px 2px forest_green_traditional, 0 1px 1px forest_green_traditional",
+                "0 0 1px 2px jet, 0 1px 1px jet",
         }}
         type={props.type?props.type:"button"}
     >{props.text}</Button>

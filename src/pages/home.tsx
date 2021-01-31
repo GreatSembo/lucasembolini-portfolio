@@ -69,15 +69,15 @@ export default function Home() {
                             leftIcon={<AiOutlineMail />}
                             textAlign="center"
                             color={"electric_lime"}
-                            _hover={{ bg: "forest_green_traditional" }}
+                            _hover={{ bg: "jet" }}
                             variant="outline"
-                            borderColor="forest_green_traditional"
+                            borderColor="jet"
                             transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
                             border="2px"
                             display="flex"
                             _focus={{
                                 boxShadow:
-                                    "0 0 1px 2px forest_green_traditional, 0 1px 1px forest_green_traditional",
+                                    "0 0 1px 2px jet, 0 1px 1px jet",
                             }}
                         >Contact Me</Button> */}
                         <MyButton onClick={()=>setLocation('/contact')} text={"Contact Me"}/>
