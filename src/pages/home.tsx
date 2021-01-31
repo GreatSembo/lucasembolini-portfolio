@@ -3,6 +3,7 @@ import { Box, Button,  Heading, SlideFade} from "@chakra-ui/react"
 import { useLocation } from "wouter"
 import PageLayout from "../components/layout/pageLayout"
 import MyButton from "../components/myButton"
+import Mountain from "../assets/beyond_back.jpg"
 export default function Home() {
     const [fadeOn, setFadeOn] = useState(false)
     const [location, setLocation] = useLocation();
@@ -52,7 +53,7 @@ export default function Home() {
         
     }, [])
     return (
-        <PageLayout particle>
+        <PageLayout background={Mountain}>
             {/* <Center bg="tomato" h="100px" color="white" justifyContent="left">
             <h1></h1> 
             </Center> */}

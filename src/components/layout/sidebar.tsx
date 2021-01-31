@@ -10,6 +10,7 @@ import {
     AiOutlineLinkedin, AiOutlineMail, AiOutlineWindows,
     AiOutlineMenu
 } from "react-icons/ai";
+import { useLocation } from "wouter"
 import Logo from "../../assets/logo"
 import Logo2 from "../../assets/logo2.png"
 import SideIcon from '../icon';
@@ -21,22 +22,27 @@ import { Link as WouterLink } from "wouter";
 // lazy form: `a` element is constructed around children
 
 function SideBar() {
+    const [location, setLocation] = useLocation();
     return (
-        <Container zIndex="1" w={{ sm: "100%", md: "80px" }} maxW="100%" h={{ sm: "70px", md: "100%" }} padding={{ sm: "0 10px ", md: "10px 0" }} marginLeft="0px" position="fixed" bgColor="forest_green_traditional">
+        <Container zIndex="1" w={{ sm: "100%", md: "80px" }} maxW="100%" h={{ sm: "70px", md: "100%" }} 
+        padding={{ sm: "0 10px ", md: "10px 0" }} marginLeft="0px" position="fixed" bgColor="forest_green_traditional"
+        boxShadow="inset 0px 0px 4px 2px #2fbf71">
 
             <SimpleGrid h="100%" spacing="40px" gridTemplateRows={{ sm: "1", md: "minmax(60px, 300px) 1fr minmax(200px, 300px)" }} gridTemplateColumns={{ sm: "1fr 1fr", md: "80px" }}>
                 {/* <Image src={Logo} alt="Luca Sembolini" w="50px" h="50px"/> */}
-                <Box marginTop="15px" marginBottom="auto" position="relative">
+                <Box marginTop="15px" marginBottom="auto" cursor="pointer" position="relative" onClick={()=>setLocation('/')}>
+
                     <Image src={Logo2} w="80px" maxHeight="110px"/>
+                
                     {/* <Logo2 w="80px" h="110px" /> */}
                 </Box>
                 {/* <Icon as={Logo} w={"80px"} h={"100px"} margin="20px 0" /> Replace with logo */}
                 <Stack direction={{ sm: "row", md: "column", base: "column" }} spacing="10px" margin="auto auto" position="relative">
                     {/* <Link as={WouterLink} to="/skills" > */}
-                    <SideIcon as={AiOutlineWindows} linkTo={"/"}/>
-                    <SideIcon as={AiOutlineUser} linkTo={ "/about"} />
-                    <SideIcon as={AiOutlineRadarChart} linkTo={ "/skills"} />
-                    <SideIcon as={AiOutlineMail} linkTo={ "/contact"} />
+                    <SideIcon as={AiOutlineWindows} linkTo={"/"} textHover="home"/>
+                    <SideIcon as={AiOutlineUser} linkTo={ "/about"} textHover="about"/>
+                    <SideIcon as={AiOutlineRadarChart} linkTo={ "/skills"} textHover="skills"/>
+                    <SideIcon as={AiOutlineMail} linkTo={ "/contact"} textHover="contact"/>
 
                 </Stack>
                 <Stack direction={{ sm: "row", md: "column", base: "column" }} spacing="10px" margin="auto auto" position="relative" display={{ sm: "none", md: "flex" }}>

@@ -39,7 +39,7 @@ export default function ContactMe() {
     <PageLayout background={Mountain}>
       {!contactSent ?
         <Box margin={{sm:"100px 20px", md:"auto"}} width={{sm:"100%", md:"50%"}} display="block">
-          <Heading display="block" color="white" size="xl" margin="10px auto">Contact Form</Heading>
+          <Heading display="block" color="white" size="2xl" margin="10px auto">Contact Form</Heading>
           <Center margin="auto auto" width="100%">
             <form
               action="https://formspree.io/f/xzbjbprb"
@@ -48,11 +48,13 @@ export default function ContactMe() {
               onSubmit={handleSubmit(onSubmit)}
             >
               <FormControl isInvalid={errors._replyto}>
-                <FormLabel htmlFor="_replyto" color="white" fontSize="2xl">Your Email</FormLabel>
+                <FormLabel htmlFor="_replyto" color="white" fontSize="3xl">Your Email</FormLabel>
                 <Input
                   color="white"
                   name="_replyto"
                   placeholder="Email"
+                  _placeholder={{fontSize:"xl"}}
+                  focusBorderColor="emerald"
                   ref={register({ required: true, pattern: /^\S+@\S+\.\S+$/ })}
                 />
 
@@ -61,11 +63,13 @@ export default function ContactMe() {
                 </FormErrorMessage>
               </FormControl>
               <FormControl mt="20px" isInvalid={errors.message}>
-                <FormLabel color="white" htmlFor="message" fontSize="2xl">Your Message</FormLabel>
+                <FormLabel color="white" htmlFor="message" fontSize="3xl">Your Message</FormLabel>
                 <Textarea
                   name="message"
-                  placeholder="Your Message"
+                  placeholder="Insert text here"
+                  _placeholder={{fontSize:"xl"}}
                   color="white"
+                  focusBorderColor="emerald"
                   ref={register({ required: true })}
                 />
                 <FormErrorMessage>

@@ -19,7 +19,7 @@ export default function About() {
         <Heading   as="h1" size="2xl" margin="0px auto 20px 40px" alignSelf="flex-start" >About Me</Heading>
           <Image src={ProfilePicture} alt="Luca Sembolini" padding="40px"/>
           <Text padding="0px 40px" fontSize="xl" textAlign="left">I'm an Italian guy that loves challenges and I'm always looking for a new goal to accomplish. 
-          Having an healthy lifestyle is my number one priority. Focused Developer on the working our and fitness enthusiast on every other of the day</Text>
+          Having an healthy lifestyle is my number one priority. Focused Developer on the working hours and fitness enthusiast on the remain time</Text>
         </Center>
         <Center w={{sm:"100%",lg:"65%"}} flexDirection="column" padding="40px">
           <Heading as="h2" size="xl" alignSelf="flex-start">Education</Heading>

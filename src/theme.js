@@ -8,14 +8,16 @@ const breakpoints = createBreakpoints({
 
 export default {
     colors: {
-        forest_green_traditional: "#004b23ff",
+        forest_green_traditional: "#363537",
         dark_green: "#006400ff",
         pakistan_green: "#007200ff",
         ao_english: "#008000ff",
         yellow_green_wheel: "#38b000ff",
         sheen_green: "#70e000ff",
-        green_lizard: "#9ef01aff",
+        green_lizard: "#8cd867",
         electric_lime: "#ccff33ff",
+        emerald:"#2fbf71",
+        mantis:"#8CD867"
     },
     breakpoints: breakpoints,
     fonts: {

@@ -7,10 +7,10 @@ function MyButton(props:any){
         <Button onClick={()=>props.onClick?props.onClick():{}} margin="50px auto auto auto"
         leftIcon={<AiOutlineMail />}
         textAlign="center"
-        color={"electric_lime"}
-        _hover={{ bg: "forest_green_traditional" }}
+        color={"emerald"}
+        _hover={{ borderColor: "emerald" }}
         variant="outline"
-        borderColor="forest_green_traditional"
+        borderColor="#cbbfbb"
         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
         border="2px"
         display="flex"

@@ -35,11 +35,21 @@ span.typewriter {
   width: 100%;
 }
 .greenLizardColor{
-  color:#9EF01A;
+  color:#2fbf71;
 }
 
 
 @font-face {
   font-family: 'ristretto';
   src: local('ristretto'), url("./assets/ristretto.woff") format('woff');
+}
+.flip{
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  
+}
+.flip:hover{
+  transform: rotateY(90deg);
+
 }
