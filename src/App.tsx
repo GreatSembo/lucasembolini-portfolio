@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, Component } from "react";
-
+import 'babel-polyfill'
 import './App.css';
 import Home from './pages/home'
 import About from './pages/about'

@@ -42,6 +42,7 @@ span.typewriter {
 @font-face {
   font-family: 'ristretto';
   src: local('ristretto'), url("./assets/ristretto.woff") format('woff');
+  font-display: swap;
 }
 .flip{
   transition: 0.3s;
