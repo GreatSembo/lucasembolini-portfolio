@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 import { useLocation } from "wouter"
 import Logo from "../../assets/logo"
-import Logo2 from "../../assets/logo2.png"
+import Cyber from "../../assets/cyber.png"
 import SideIcon from '../icon';
 import { Link as WouterLink } from "wouter";
 
@@ -32,7 +32,7 @@ function SideBar() {
                 {/* <Image src={Logo} alt="Luca Sembolini" w="50px" h="50px"/> */}
                 <Box marginTop="15px" marginBottom="auto" cursor="pointer" position="relative" onClick={()=>setLocation('/')}>
 
-                    <Image src={Logo2} w="80px" maxHeight="110px"/>
+                    <Image src={Cyber} w="80px" maxHeight="110px" width="95%" margin="auto"/>
                 
                     {/* <Logo2 w="80px" h="110px" /> */}
                 </Box>
